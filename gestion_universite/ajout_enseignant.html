@@ -279,60 +279,89 @@
                                 <h3 class="f_s_25 f_w_700 dark_text mr_30">Tableau de bord</h3>
                                 <ol class="breadcrumb page_bradcam mb-0">
                                     <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
-                                    <li class="breadcrumb-item"><a>Enseignants</a></li>
+                                    <li class="breadcrumb-item"><a href="enseignants.html">Enseignants</a></li>
+                                    <li class="breadcrumb-item"><a>Ajouter</a></li>
                                 </ol>
-                            </div>
-                            <div class="page_title_right">
-                                <div class="page_date_button d-flex align-items-center">
-                                    <a href="ajout_enseignant.html" class="white_btn3"><i class="fas fa-plus-square"></i>  Ajouter un Enseignant</a>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card QA_section border-0">
-                            <div class="card-body QA_table ">
-                                <div class="table-responsive shopping-cart ">
-                                    <table class="table mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th class="border-top-0">Photo</th>
-                                                <th class="border-top-0">Nom</th>
-                                                <th class="border-top-0">Prénom</th>
-                                                <th class="border-top-0">Email</th>
-                                                <th class="border-top-0">Téléphone</th>
-                                                <th class="border-top-0">Accès en ligne</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><img src="../img/staf/3.png" alt height="52"></td>
-                                                <td>KUBEMBULA</td>
-                                                <td>Jean Élie</td>
-                                                <td>jeaneliekubembula@gmail.com</td>
-                                                <td>064838870</td>
-                                                <td><a class="status_btn">Oui</a></td>
-                                                <td>
-                                                    <div class="action_btns d-flex">
-                                                        <a href="enseignant_detail.html" class="action_btn mr_10"> <i class="fas fa-eye"></i> </a>
-                                                        <a href="#" class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
-                                                        <a href="#" class="action_btn"> <i class="fas fa-trash"></i> </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                    <div class="col-8">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">Ajouter un Enseignant </h3>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="white_card_body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Nom</label>
+                                        <input type="text" class="form-control" id="libelle" placeholder="nom">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Prénom</label>
+                                        <input type="text" class="form-control" id="libelle" placeholder="nom">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Date de naissance</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Email</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Téléphone</label>
+                                        <input type="tel" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Adrèsse</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Département de naissance</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Ville</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="level">Sexe</label>
+                                        <select id="level" class="form-control">
+                                            <option selected>Choisir...</option>
+                                            <option>Masculin</option>
+                                            <option>Féminin</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Date d'entrée dans l'établissement</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Photo</label>
+                                        <input type="file" class="form-control">
+                                    </div>
+                                    <div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-label form-check-label" for="gridCheck"> Accès en ligne ?</label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success"> <i class="ti-save"></i> Enregistrer</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!--======================== FOOTER PAGE ===========================-->
         <div class="footer_part">
             <div class="container-fluid">
@@ -345,72 +374,71 @@
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
 
+    <div id="back-top" style="display: none;">
+        <a title="Go to Top" href="#"><i class="ti-angle-up"></i></a>
+    </div>
 
-<div id="back-top" style="display: none;">
-<a title="Go to Top" href="#"><i class="ti-angle-up"></i></a>
-</div>
+    <script src="../js/jquery1-3.4.1.min.js"></script>
 
-<script src="../js/jquery1-3.4.1.min.js"></script>
+    <script src="../js/popper1.min.js"></script>
 
-<script src="../js/popper1.min.js"></script>
+    <script src="../js/bootstrap1.min.js"></script>
 
-<script src="../js/bootstrap1.min.js"></script>
+    <script src="../js/metisMenu.js"></script>
 
-<script src="../js/metisMenu.js"></script>
+    <script src="../vendors/count_up/jquery.waypoints.min.js"></script>
 
-<script src="../vendors/count_up/jquery.waypoints.min.js"></script>
+    <script src="../vendors/chartlist/Chart.min.js"></script>
 
-<script src="../vendors/chartlist/Chart.min.js"></script>
+    <script src="../vendors/count_up/jquery.counterup.min.js"></script>
 
-<script src="../vendors/count_up/jquery.counterup.min.js"></script>
+    <script src="../vendors/niceselect/js/jquery.nice-select.min.js"></script>
 
-<script src="../vendors/niceselect/js/jquery.nice-select.min.js"></script>
+    <script src="../vendors/owl_carousel/js/owl.carousel.min.js"></script>
 
-<script src="../vendors/owl_carousel/js/owl.carousel.min.js"></script>
+    <script src="../vendors/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatable/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatable/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatable/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatable/js/jszip.min.js"></script>
+    <script src="../vendors/datatable/js/pdfmake.min.js"></script>
+    <script src="../vendors/datatable/js/vfs_fonts.js"></script>
+    <script src="../vendors/datatable/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatable/js/buttons.print.min.js"></script>
 
-<script src="../vendors/datatable/js/jquery.dataTables.min.js"></script>
-<script src="../vendors/datatable/js/dataTables.responsive.min.js"></script>
-<script src="../vendors/datatable/js/dataTables.buttons.min.js"></script>
-<script src="../vendors/datatable/js/buttons.flash.min.js"></script>
-<script src="../vendors/datatable/js/jszip.min.js"></script>
-<script src="../vendors/datatable/js/pdfmake.min.js"></script>
-<script src="../vendors/datatable/js/vfs_fonts.js"></script>
-<script src="../vendors/datatable/js/buttons.html5.min.js"></script>
-<script src="../vendors/datatable/js/buttons.print.min.js"></script>
+    <script src="../vendors/datepicker/datepicker.js"></script>
+    <script src="../vendors/datepicker/datepicker.en.js"></script>
+    <script src="../vendors/datepicker/datepicker.custom.js"></script>
+    <script src="../js/chart.min.js"></script>
+    <script src="../vendors/chartjs/roundedBar.min.js"></script>
 
-<script src="../vendors/datepicker/datepicker.js"></script>
-<script src="../vendors/datepicker/datepicker.en.js"></script>
-<script src="../vendors/datepicker/datepicker.custom.js"></script>
-<script src="../js/chart.min.js"></script>
-<script src="../vendors/chartjs/roundedBar.min.js"></script>
+    <script src="../vendors/progressbar/jquery.barfiller.js"></script>
 
-<script src="../vendors/progressbar/jquery.barfiller.js"></script>
+    <script src="../vendors/tagsinput/tagsinput.js"></script>
 
-<script src="../vendors/tagsinput/tagsinput.js"></script>
+    <script src="../vendors/text_editor/summernote-bs4.js"></script>
+    <script src="../vendors/am_chart/amcharts.js"></script>
 
-<script src="../vendors/text_editor/summernote-bs4.js"></script>
-<script src="../vendors/am_chart/amcharts.js"></script>
+    <script src="../vendors/scroll/perfect-scrollbar.min.js"></script>
+    <script src="../vendors/scroll/scrollable-custom.js"></script>
 
-<script src="../vendors/scroll/perfect-scrollbar.min.js"></script>
-<script src="../vendors/scroll/scrollable-custom.js"></script>
+    <script src="../vendors/vectormap-home/vectormap-2.0.2.min.js"></script>
+    <script src="../vendors/vectormap-home/vectormap-world-mill-en.js"></script>
 
-<script src="../vendors/vectormap-home/vectormap-2.0.2.min.js"></script>
-<script src="../vendors/vectormap-home/vectormap-world-mill-en.js"></script>
+    <script src="../vendors/apex_chart/apex-chart2.js"></script>
+    <script src="../vendors/apex_chart/apex_dashboard.js"></script>
 
-<script src="../vendors/apex_chart/apex-chart2.js"></script>
-<script src="../vendors/apex_chart/apex_dashboard.js"></script>
+    <script src="../vendors/chart_am/core.js"></script>
+    <script src="../vendors/chart_am/charts.js"></script>
+    <script src="../vendors/chart_am/animated.js"></script>
+    <script src="../vendors/chart_am/kelly.js"></script>
+    <script src="../vendors/chart_am/chart-custom.js"></script>
 
-<script src="../vendors/chart_am/core.js"></script>
-<script src="../vendors/chart_am/charts.js"></script>
-<script src="../vendors/chart_am/animated.js"></script>
-<script src="../vendors/chart_am/kelly.js"></script>
-<script src="../vendors/chart_am/chart-custom.js"></script>
-
-<script src="../js/dashboard_init.js"></script>
-<script src="../js/custom.js"></script>
+    <script src="../js/dashboard_init.js"></script>
+    <script src="../js/custom.js"></script>
 </body>
 
 </html>
