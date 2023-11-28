@@ -74,20 +74,20 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="trombinoscopes.html">Trombinoscope</a></li>
-                    <li><a href="enseignants.html">Enseignant</a></li>
-                    <li><a href="etudiants.html">Etudiant</a></li>
-                    <li><a href="parents.html">Parent</a></li>
-                    <li><a href="annee_academiques.html">Année academique</a></li>
-                    <li><a href="niveaux.html">Niveau</a></li>
-                    <li><a href="semestres.html">Semestre</a></li>
-                    <li><a href="filieres.html">Filière</a></li>
-                    <li><a href="parcours.html">Parcours</a></li>
-                    <li><a href="groupe_matieres.html">Groupe de Matière</a></li>
-                    <li><a href="matieres.html">Matière</a></li>
-                    <li><a href="programmes.html">Programme</a></li>
-                    <li><a href="sanctions.html">Sanction & Appreciation</a></li>
-                    <li><a href="suivis.html">Indicateur & Suivis</a></li>
+                    <li><a href="../gestion_universite/trombinoscopes.html">Trombinoscope</a></li>
+                    <li><a href="../gestion_universite/enseignants.html">Enseignant</a></li>
+                    <li><a href="../gestion_universite/etudiants.html">Etudiant</a></li>
+                    <li><a href="../gestion_universite/parents.html">Parent</a></li>
+                    <li><a href="../gestion_universite/annee_academiques.html">Année academique</a></li>
+                    <li><a href="../gestion_universite/niveaux.html">Niveau</a></li>
+                    <li><a href="../gestion_universite/semestres.html">Semestre</a></li>
+                    <li><a href="../gestion_universite/filieres.html">Filière</a></li>
+                    <li><a href="../gestion_universite/parcours.html">Parcours</a></li>
+                    <li><a href="../gestion_universite/groupe_matieres.html">Groupe de Matière</a></li>
+                    <li><a href="../gestion_universite/matieres.html">Matière</a></li>
+                    <li><a href="../gestion_universite/programmes.html">Programme</a></li>
+                    <li><a href="../gestion_universite/sanctions.html">Sanction & Appreciation</a></li>
+                    <li><a href="../gestion_universite/suivis.html">Indicateur & Suivis</a></li>
                 </ul>
             </li>
             
@@ -184,14 +184,12 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="">Période d'évaluation</a></li>
-                    <li><a href="">Type d'Évaluations</a></li>
-                    <li><a href="">Type de document</a></li>
-                    <li><a href="">Type de présence</a></li>
-                    <li><a href="">Type de sanction</a></li>
-                    <li><a href="">Type de comptes</a></li>
-                    <li><a href="">Type de congé</a></li>
-                    <li><a href="">Réglage général</a></li>
+                    <li><a href="type_evaluations.html">Type d'Évaluations</a></li>
+                    <li><a href="type_documents.html">Type de document</a></li>
+                    <li><a href="type_sanctions.html">Type de sanction</a></li>
+                    <li><a href="type_comptes.html">Type de comptes</a></li>
+                    <li><a href="types_conges.html">Type de congé</a></li>
+                    <li><a href="reglage_generale.html">Réglage général</a></li>
                     
                 </ul>
             </li>
@@ -199,8 +197,8 @@
     </nav>
 
     <section class="main_content dashboard_part large_header_bg">
-         <!-- ========================= HEADER ======================= -->
-         <div class="container-fluid g-0">
+        <!-- ========================= HEADER ======================= -->
+        <div class="container-fluid g-0">
             <div class="row">
                 <div class="col-lg-12 p-0 ">
 
@@ -269,6 +267,7 @@
             </div>
         </div>
 
+        <!-- =============== MAIN PAGE =============================-->
         <div class="main_content_iner overly_inner ">
             <div class="container-fluid p-0 ">
                 <!-- ================= Entête ====================-->
@@ -276,75 +275,105 @@
                     <div class="col-12">
                         <div class="page_title_box d-flex flex-wrap align-items-center justify-content-between">
                             <div class="page_title_left d-flex align-items-center">
-                                <h3 class="f_s_25 f_w_700 dark_text mr_30">Tableau de bord</h3>
-                                <ol class="breadcrumb page_bradcam mb-0">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Accueil</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Trombinoscope</a></li>
-                                </ol>
-                            </div>
-                            <div class="page_title_right">
-                                <div class="page_date_button d-flex align-items-center">
-                                    <a href="#" class="white_btn3">Ajouter un étudiant</a>
-                                </div>
+                                <h3 class="f_s_25 f_w_700 dark_text mr_30">Réglage généraux</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row ">
-                    <div class="col-12">
-                        <div class="white_card mb_30 ">
-                            <div class="white_card_header">
-                                <div class="bulder_tab_wrapper">
-                                    <ul class="nav" id="myTab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="student-tab" data-bs-toggle="tab" href="#student" role="tab" aria-controls="profile" aria-selected="false">Trombinoscope des étudiants</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="teacher-tab" data-bs-toggle="tab" href="#teacher" role="tab" aria-controls="teacher" aria-selected="false">Trombinoscope des enseignants</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="direction-tab" data-bs-toggle="tab" href="#direction" role="tab" aria-controls="direction" aria-selected="false">Trombinoscope de la direction</a>
-                                        </li>
-                                    </ul>
+                    <div class="col-xl-12 ">
+                        <div class="white_card card_height_100 mb_30 user_crm_wrapper">
+                            <div class="crm_reports_bnner">
+                                <div class="row justify-content-end ">
+                                    <div class="col-lg-6">
+                                        <h4>ELIMU Universite</h4>
+                                        <p>Administrer votre établissement universitaire en toute simplicité et sécurité</p>
+                                        <a href="#">savoir plus <i class="fas fa-arrow-right"></i> </a>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
+                    <div class="col-xl-12">
+                        <div class="white_card card_height_100 mb_30">
                             <div class="white_card_body">
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="student" role="tabpanel" aria-labelledby="student-tab">
-                                        <div class="builder_select">
-                                            <div class="row">
-                                                <div class="col-md-4 col-lg-4 col-xl-4 box-col-6">
-                                                    <div class="card custom-card">
-                                                        <div class="card-header"><img class="img-fluid" src="../img/profilebox/1.jpg" alt data-original-title title></div>
-                                                        <div class="card-profile"><img class="rounded-circle" src="../img/profilebox/7.jpg" alt data-original-title title></div>
-                                                        <div class="text-center profile-details">
-                                                            <h4>Jean-Elie KUBEMBULA</h4>
-                                                            <h6>Date de naissance : 25/01/1999</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <form>
+                                    <h5 class="text-primary mt-2">Informations générales</h5><hr>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Nom de l'établissement</label>
+                                            <input type="text" class="form-control" placeholder="École Démo">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Numéro de téléphoe</label>
+                                            <input type="text" class="form-control" placeholder="064838870">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Adresse de l'établissement</label>
+                                            <input type="text" class="form-control" placeholder="50 rue nkouma moungalie    ">
                                         </div>
                                     </div>
-
-                                    <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="teacher-tab">
-                                        <div class="builder_select">
-                                            <div class="row">
-                                                <p>trombinoscopes pour enseignants ici</p>
-                                            </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Adresse du siège social</label>
+                                            <input type="text" class="form-control" placeholder="50 rue nkouma moungalie    ">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Adresse email</label>
+                                            <input type="email" class="form-control" placeholder="ecoledemo@gmail.com">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Pied de page bulletin</label>
+                                            <input type="text" class="form-control" placeholder="Copyright &copy; ecole-demo">
                                         </div>
                                     </div>
-
-                                    <div class="tab-pane fade" id="direction" role="tabpanel" aria-labelledby="direction-tab">
-                                        <div class="builder_select">
-                                            <div class="row">
-                                                <p>trombinoscopes pour direction ici</p>
-                                            </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Device</label>
+                                            <select id="level" class="form-control">
+                                                <option>F CFA</option>
+                                                <option>XAF</option>
+                                                <option value="">EUR</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Système scolaire</label>
+                                            <select id="level" class="form-control">
+                                                <option>Congolais</option>
+                                                <option>Français</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Année scolaire en cours</label>
+                                            <select id="level" class="form-control">
+                                                <option selected>2023-2024</option>
+                                                <option>...</option>
+                                                <option>2022-2023</option>
+                                            </select>
                                         </div>
                                     </div>
-                                </div>
+                                    <h5 class="text-primary mt-4">Frais d'admission</h5><hr>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Frais d'admission</label>
+                                            <select id="level" class="form-control">
+                                                <option>Activé</option>
+                                                <option>Desactive</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Frais d'inscription</label>
+                                            <input type="number" class="form-control">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="level">Frais de réinscription</label>
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success"> <i class="ti-save"></i> Sauvegarder</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -353,8 +382,20 @@
             </div>
         </div>
 
-    </section>
+        <!--======================== FOOTER PAGE ===========================-->
+        <div class="footer_part">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer_iner text-center">
+                            <p>2020 © eneo group - conçu par <a href="#"> <i class="ti-heart"></i> </a><a href="#"> Tableau de Bord</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </section>
 
     <div id="back-top" style="display: none;">
         <a title="Go to Top" href="#"><i class="ti-angle-up"></i></a>
@@ -421,4 +462,3 @@
 </body>
 
 </html>
-
