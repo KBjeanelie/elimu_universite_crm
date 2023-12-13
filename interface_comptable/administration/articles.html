@@ -54,7 +54,7 @@
         <ul id="sidebar_menu">
 
             <li class>
-                <a href="index.html" aria-expanded="false">
+                <a href="../index.html" aria-expanded="false">
                     <div class="nav_icon_small">
                     <img src="../../img/menu-icon/dashboard.svg" alt>
                     </div>
@@ -64,16 +64,7 @@
                 </a>
             </li>
 
-            <li class>
-                <a href="index.html" aria-expanded="false">
-                    <div class="nav_icon_small">
-                    <img src="../../img/menu-icon/5.svg" alt>
-                    </div>
-                    <div class="nav_title">
-                        <span>Demande d'Inscription</span>
-                    </div>
-                </a>
-            </li>
+            
 
             <li class>
                 <a class="has-arrow" href="#" aria-expanded="false">
@@ -85,10 +76,9 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="facture_comp/engagement_financier.html"> Engagements financier </a></li>
-                    <li><a href="facture_comp/reglements.html"> Les règlement </a></li>
-                    <li><a href="facture_comp/factures.html"> Factures étudiants </a></li>
-                    <li><a href="facture_comp/comptabilite.html"> Comptabilité étudiants </a></li>
+                    <li><a href="../facture_comp/engagement_financier.html"> Engagements financier </a></li>
+                    <li><a href="../facture_comp/reglements.html"> Les règlement </a></li>
+                    <li><a href="../facture_comp/factures.html"> Factures étudiants </a></li>
                 </ul>
             </li>
 
@@ -117,7 +107,7 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="stockage/media.html">Gestion de media</a></li>
+                    <li><a href="../stockage/media.html">Gestion de media</a></li>
                 </ul>
             </li>
 
@@ -131,7 +121,7 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="communication/messages.html">Messages</a></li>
+                    <li><a href="../communication/messages.html">Messages</a></li>
                     <!-- <li><a href="communication/notifications.html">Notifications</a></li> -->
                 </ul>
             </li>
@@ -146,7 +136,7 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="administration/articles.html">Catalogue des article</a></li>
+                    <li><a href="articles.html">Catalogue des article</a></li>
                     
                 </ul>
             </li>
@@ -232,15 +222,70 @@
                     <div class="col-12">
                         <div class="page_title_box d-flex flex-wrap align-items-center justify-content-between">
                             <div class="page_title_left d-flex align-items-center">
-                                <h3 class="f_s_25 f_w_700 dark_text mr_30">Tableau de bord</h3>
+                                <h3 class="f_s_25 f_w_700 dark_text mr_30">Catalogue des articles</h3>
                                 <ol class="breadcrumb page_bradcam mb-0">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Accueil</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">/</a></li>
                                 </ol>
                             </div>
                             <div class="page_title_right">
                                 <div class="page_date_button d-flex align-items-center">
-                                    <img src="img/icon/calender_icon.svg" alt>
-                                    Mercredi, 22 Novembre 2023
+                                    <a href="ajout_article.html" class="white_btn3">Ajouter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="white_card card_height_100 mb_30 pt-4">
+                            <div class="white_card_body">
+                                <div class="QA_section">
+                                    <div class="white_box_tittle list_header">
+                                        <div class="box_right d-flex lms_block">
+                                            <div class="serach_field_2">
+                                                <div class="search_inner">
+                                                    <form Active="#">
+                                                        <div class="search_field">
+                                                            <input type="text" placeholder="rechercher une matière....">
+                                                        </div>
+                                                        <button type="submit"> <i class="ti-search"></i> </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="add_button ms-2">
+                                                <a href="#" data-toggle="modal" data-target="#addcategory" class="btn_1">search</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="QA_table mb_30">
+                                        <table class="table lms_table_active ">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Nom</th>
+                                                    <th scope="col">Montant par défaut</th>
+                                                    <th scope="col">Quantité par defaut</th>
+                                                    <th scope="col">Année scolaire</th>
+                                                    <th scope="col">Facturation ?   </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Frais scolaire</td>
+                                                    <td>1000</td>
+                                                    <td>1</td>
+                                                    <td>Toute l'année</td>
+                                                    <td><a class="status_btn">Oui</a></td>
+                                                    <td>
+                                                        <div class="action_btns d-flex">
+                                                            <a href="#" class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
+                                                            <a href="#" class="action_btn"> <i class="fas fa-trash"></i> </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>

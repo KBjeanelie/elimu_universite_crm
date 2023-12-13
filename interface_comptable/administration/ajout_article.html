@@ -54,7 +54,7 @@
         <ul id="sidebar_menu">
 
             <li class>
-                <a href="index.html" aria-expanded="false">
+                <a href="../index.html" aria-expanded="false">
                     <div class="nav_icon_small">
                     <img src="../../img/menu-icon/dashboard.svg" alt>
                     </div>
@@ -76,10 +76,9 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="facture_comp/engagement_financier.html"> Engagements financier </a></li>
-                    <li><a href="facture_comp/reglements.html"> Les règlement </a></li>
-                    <li><a href="facture_comp/factures.html"> Factures étudiants </a></li>
-                    
+                    <li><a href="../facture_comp/engagement_financier.html"> Engagements financier </a></li>
+                    <li><a href="../facture_comp/reglements.html"> Les règlement </a></li>
+                    <li><a href="../facture_comp/factures.html"> Factures étudiants </a></li>
                 </ul>
             </li>
 
@@ -108,7 +107,7 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="stockage/media.html">Gestion de media</a></li>
+                    <li><a href="../stockage/media.html">Gestion de media</a></li>
                 </ul>
             </li>
 
@@ -122,7 +121,7 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="communication/messages.html">Messages</a></li>
+                    <li><a href="../communication/messages.html">Messages</a></li>
                     <!-- <li><a href="communication/notifications.html">Notifications</a></li> -->
                 </ul>
             </li>
@@ -137,7 +136,7 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="administration/articles.html">Catalogue des article</a></li>
+                    <li><a href="articles.html">Catalogue des article</a></li>
                     
                 </ul>
             </li>
@@ -223,22 +222,67 @@
                     <div class="col-12">
                         <div class="page_title_box d-flex flex-wrap align-items-center justify-content-between">
                             <div class="page_title_left d-flex align-items-center">
-                                <h3 class="f_s_25 f_w_700 dark_text mr_30">Tableau de bord</h3>
+                                <h3 class="f_s_25 f_w_700 dark_text mr_30">Catalogue des articles</h3>
                                 <ol class="breadcrumb page_bradcam mb-0">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Accueil</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);"> / Ajouter</a></li>
                                 </ol>
-                            </div>
-                            <div class="page_title_right">
-                                <div class="page_date_button d-flex align-items-center">
-                                    <img src="img/icon/calender_icon.svg" alt>
-                                    Mercredi, 22 Novembre 2023
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-8">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">Ajouter un article </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Nom</label>
+                                        <input type="text" class="form-control" id="libelle" placeholder="....">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Montant par défaut</label>
+                                        <input type="number" class="form-control" id="libelle">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Quantité par defaut</label>
+                                        <input type="number" class="form-control" id="libelle">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="level">Mode d'échéancier</label>
+                                        <select id="level" class="form-control">
+                                            <option selected>Choisir...</option>
+                                            <option>Matière Scientique</option>
+                                            <option>Matière Litteraire</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="libelle">Code analytique</label>
+                                        <textarea name="" id="" class="form-control" cols="30" rows="5"></textarea>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-label form-check-label" for="gridCheck">Est Actif ?</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-label form-check-label" for="gridCheck">Soumise à une tranche ?</label>
+                                    </div>
+                                    <a  href="articles.html" class="btn btn-danger"> <i class="ti-close"></i> Annuler</a>
+                                    <button type="submit" class="btn btn-success"> <i class="ti-save"></i> Enregistrer</button>
 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
